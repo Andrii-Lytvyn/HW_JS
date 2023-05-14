@@ -40,3 +40,22 @@ console.log("Массив classmatesArr: ");
 console.log(classmatesArr);
 const newClassmates = classmatesArr.join("|");
 console.log(newClassmates);
+console.log();
+console.log("=========================== Задание 4=====================================");
+
+// Задание 4
+// Cоздайте массив currency, положите в него 6 разных значений.
+// Создайте переменную newCurrency.
+// Используя метод splice, удалите из массива 3 элемента, начиная со второго,
+// и вместо удаленных элементов вставьте 1 элемент со значением "I will earn big money by programming".
+// Все это положите в переменную newCurrency.
+// Выведите в сонсоль currency и newCurrency, посмотрите, мутировал ли исходныц массив.
+let currency = ["UAH", "USD", "EUR", "PLZ", "CHF", "USDT"];
+console.log(currency);
+let newCurrency = currency.splice(2, 3, "I will earn big money by programming");
+console.log(newCurrency);
+console.log("Это currency: " + currency);
+console.log("Это newCurrency: " + newCurrency);
+newCurrency = currency;
+console.log("Это currency: " + currency);
+console.log("Это newCurrency: " + newCurrency);
