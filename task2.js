@@ -17,3 +17,14 @@ console.log("Task2 При помощи синтаксиса for (key in object) 
 for (let keys in myGarden) {
     console.log(myGarden[keys]);
 }
+// "Используйте синтаксис for (key in object) {} и добавьте проверку на наличие ключа apple
+//             Если такой ключ существует, то выведите в консоль значение ключа pear присвоив ему новое значение" 
+//             delicious");  
+console.log(myGarden);
+for (let keys in myGarden) {
+    if (keys === "apple") {
+        console.log("Значение ключа Pear: " + myGarden.pear);
+        myGarden.pear="delicious";
+        console.log("Значение ключа Pear: " + myGarden.pear);
+    }
+}
