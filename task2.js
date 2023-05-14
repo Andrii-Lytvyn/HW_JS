@@ -24,7 +24,19 @@ console.log(myGarden);
 for (let keys in myGarden) {
     if (keys === "apple") {
         console.log("Значение ключа Pear: " + myGarden.pear);
-        myGarden.pear="delicious";
+        myGarden.pear = "delicious";
         console.log("Значение ключа Pear: " + myGarden.pear);
     }
 }
+//Задание 3
+// Создайте строку classmates. Перечислите в ней имена нескольких студентов.
+// Разбейте строку, используя метод split, положите значение в константу classmatesArr
+// Затем соедините массив, используя метод join, положите значение в константу newClassmates
+
+let classmates = "Andrii,Vadim,Andrii,Valentina,Maksim,Elena,Leon";
+console.log("Строка classmates: " + classmates);
+const classmatesArr = classmates.split(",");
+console.log("Массив classmatesArr: ");
+console.log(classmatesArr);
+const newClassmates = classmatesArr.join("|");
+console.log(newClassmates);
